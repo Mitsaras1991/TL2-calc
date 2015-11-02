@@ -21,56 +21,32 @@ public class CalculatorModel {
             switch(operator) {
                 case "+" :
                     calculationValue = firstNumber + secondNumber;
-                    setCalculationValue(calculationValue);
+                    getCalculationValue();
                     break;
                 case "-":
                     calculationValue = firstNumber - secondNumber;
-                    setCalculationValue(calculationValue);
+                    getCalculationValue();
                     break;
                 case "x":
                     calculationValue = firstNumber * secondNumber;
-                    setCalculationValue(calculationValue);
+                    getCalculationValue();
                     break;
                 case "/":
                     calculationValue = firstNumber / secondNumber;
-                    setCalculationValue(calculationValue);
+                    getCalculationValue();
                     break;
             }
         }
         
-        public double setCalculationValue(double calculationValue) {
-            return calculationValue;
-        }
-
-
-        public double getCalculationValue() {
+    public double getCalculationValue() {
             return calculationValue;
         }
     }
     
-    public class Factorial
-    {
-        public double factorial(double number) {
-            double calculationValue = 1; // this  will be the result
-            for (int i = 1; i <= number; i++) {
-                calculationValue *= i;
-            }
-            return calculationValue;
-        }
-    }
     
-    public class Log
+public class Percentage
     {
-        public double log(double number)
-        {
-            double calculationValue = Math.log(number);
-            return calculationValue;        
-        }
-    }
-    
-    public class Percentage
-    {
-        public double calculationValue = 0;
+        private double calculationValue = 0;
         public String operator;
         
         public void perceentage(double firstNumber, double secondNumber)
@@ -78,15 +54,19 @@ public class CalculatorModel {
             switch (operator) {
                 case "+":
                     calculationValue = firstNumber + ((secondNumber / 100) * firstNumber);
+                    getCalculationValue();
                     break;
                 case "-":
                     calculationValue = firstNumber - ((secondNumber / 100) * firstNumber);
+                    getCalculationValue();
                     break;
                 case "/":
                     calculationValue = firstNumber / ((secondNumber / 100) * firstNumber);
+                    getCalculationValue();
                     break;
                 case "x":
                     calculationValue = firstNumber * ((secondNumber / 100) * firstNumber);
+                    getCalculationValue();
                     break;
                 default:
                     break;
@@ -99,7 +79,7 @@ public class CalculatorModel {
         }
     }
     
-    public class Root
+ public class Root
     {
         public double squareRoot(double number)
         {
