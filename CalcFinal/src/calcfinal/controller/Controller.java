@@ -3,19 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package calcfinal;
+package calcfinal.controller;
 
 /**
  *
  * @author dimit
  */
-public class CalcFinal {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class Controller {
+    
+    public void start()
+    {
+        
     }
     
 }

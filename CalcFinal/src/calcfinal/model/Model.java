@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package calcfinal.model;
 
 /**
  *
  * @author JohnyWalker
  */
-public class CalculatorModel {
+public class Model {
     
     public class Calculations {
 
